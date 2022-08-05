@@ -13,13 +13,16 @@ function App() {
         <div >
             <TopBar id={'top'}/>
         </div>
-      <div id={'left'}>
-        <UserMenu  />
+      <div id={'left'} >
+        <UserMenu style={{
+            position:'fixed',
+            top:'64px',
+        }}/>
       </div>
       <div id={'right'}>
           <div id={'above'}></div>
           <div id={'content'} style={{
-              marginTop: '72px',
+              marginTop: '64px',
           }}>
               <Routes>
                       <Route path="/video" element={<VideoList />} />

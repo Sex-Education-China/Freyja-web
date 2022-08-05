@@ -2,6 +2,8 @@
   float: left;
   height: 1440px;
   width: 10%;
+  position: relative;
+  top: 64px;
 }
 #right {
   float: right;
