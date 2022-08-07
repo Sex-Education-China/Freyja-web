@@ -6,6 +6,13 @@ import IconButton from "@mui/material/IconButton";
 import CloseIcon from '@mui/icons-material/Close';
 function ActivePage()   {
     const [open, setOpen] = React.useState(true);
+    let shouldShow = false;
+    function show() {
+        this.setState({
+            shouldShow: true
+        })
+    }
+
         return (
             <div>
                 <Container>
@@ -42,6 +49,7 @@ function ActivePage()   {
                     }}>
                         <TextField id="outlined-basic" label="输入您的激活码" variant="outlined" onKeyUp={(e) => {
                             if (e.keyCode === 13) {
+                                shouldShow = true
                                 setOpen(true);
                             }
                         }}/>
@@ -54,29 +62,9 @@ function ActivePage()   {
                         >验证</Button>
                     </Paper>
                 </Container>
-                <Collapse in={open}>
-                    <Alert
-                        action={
-                            <IconButton
-                                aria-label="close"
-                                color="inherit"
-                                size="small"
-                                onClick={() => {
-                                    setOpen(false);
-                                }}
-                            >
-                                <CloseIcon fontSize="inherit" />
-                            </IconButton>
-                        }
-                        sx={{
-                            mb: 2,
-                            position: 'fixed',
-                            bottom: '0',
-                            right: '0',
-                    }}
-                    >
-                        激活成功，感谢支持！
-                    </Alert>
+                <Collapse in={open}
+                >
+
                 </Collapse>
             </div>
         );
