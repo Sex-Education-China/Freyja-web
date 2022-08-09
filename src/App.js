@@ -6,6 +6,7 @@ import VideoList from "./pages/VidoList";
 import ActivePage from "./pages/ActivePage";
 import TopBar from "./components/TopBar";
 import UserCenter from "./pages/UserCenter";
+import VideoPage from "./pages/VideoPage";
 function App() {
   return (
     <div className="App">
@@ -25,9 +26,10 @@ function App() {
               marginTop: '64px',
           }}>
               <Routes>
-                      <Route path="/video" element={<VideoList />} />
-                      <Route path={"/active"} element={<ActivePage />} />
-                      <Route path={'/user'} element={<UserCenter />} />
+                  <Route path="/video" element={<VideoList />} />
+                  <Route path={"/active"} element={<ActivePage />} />
+                  <Route path={'/user'} element={<UserCenter />} />
+                  <Route path={'/video/:id'} element={<VideoPage />} />
               </Routes>
           </div>
 
