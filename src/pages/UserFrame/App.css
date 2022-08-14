@@ -17,11 +17,10 @@
 #top {
   height: 5%
 }
+.app {
+  width: 2560px;
+  height: 1440px;
+}
 .MuiDrawer-paper {
   margin-top: 2.7%;
-}
-#avatar {
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center;     /* 垂直居中 */
 }

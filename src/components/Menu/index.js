@@ -53,7 +53,7 @@ class UserMenu extends React.Component {
                         <ListItem key={'用户中心'} disablePadding>
                             <ListItemButton
                                 component={RouterLink}
-                                to={'/user'}
+                                to={'/user/user'}
                             >
                                 <ListItemIcon>
                                     {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -87,12 +87,25 @@ class UserMenu extends React.Component {
                         <ListItem  disablePadding>
                             <ListItemButton
                                 component={Link}
-                                to={'/video'}
+                                to={'/user/video'}
                             >
                                 <ListItemIcon>
                                     <InboxIcon />
                                 </ListItemIcon>
                                 <ListItemText primary="中出" />
+                            </ListItemButton>
+                        </ListItem>
+                    </List>
+                    <List>
+                        <ListItem  disablePadding>
+                            <ListItemButton
+                                component={Link}
+                                to={'/user/announced'}
+                            >
+                                <ListItemIcon>
+                                    <InboxIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="公告" />
                             </ListItemButton>
                         </ListItem>
                     </List>
