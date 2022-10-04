@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import TopBar from "../../components/TopBar";
-import UserMenu from "../../components/Menu";
+import TopBar from "../../components.mui/TopBar";
+import UserMenu from "../../components.mui/Menu";
 import {Outlet, Route, Routes} from "react-router-dom";
 import VideoList from "../VidoList";
 import ActivePage from "../ActivePage";

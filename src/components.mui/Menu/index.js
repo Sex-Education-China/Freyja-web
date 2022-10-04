@@ -100,7 +100,7 @@ class UserMenu extends React.Component {
                         <ListItem  disablePadding>
                             <ListItemButton
                                 component={Link}
-                                to={'/user/announced'}
+                                to={'/user/announce'}
                             >
                                 <ListItemIcon>
                                     <InboxIcon />

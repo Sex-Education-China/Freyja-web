@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import Nav from '../../compoments/Nav/index'
-import {DefaultButton} from "@fluentui/react";
-class IndexPage extends Component {
+import Nav from "../../compoments/Nav";
+import {Outlet} from "react-router-dom";
+
+class IndexFrame extends Component {
     render() {
         const leftStyle={
             float:"left",
@@ -17,11 +18,11 @@ class IndexPage extends Component {
                     <Nav></Nav>
                 </div>
                 <div style={rightStyle}>
-                    <DefaultButton text="Standard"  />
+                    <Outlet></Outlet>
                 </div>
             </div>
         );
     }
 }
 
-export default IndexPage;
+export default IndexFrame;
