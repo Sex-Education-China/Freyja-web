@@ -1,19 +1,13 @@
-import React, {Component} from 'react';
-import VideoCard from "../../compoments/VideoCard";
-import classes from './index.css'
-class VideoPage extends Component {
-    render() {
+import React from 'react';
+import {useParams} from "react-router-dom";
 
-        return (
-            <div className={classes.d}>
-                <VideoCard ></VideoCard>
-                <VideoCard ></VideoCard>
-                <VideoCard ></VideoCard>
-                <VideoCard ></VideoCard>
-                <VideoCard ></VideoCard>
-            </div>
-        );
-    }
-}
+const VideoPage = () => {
+    const { id } = useParams()
+    return (
+        <div>
+            {id}
+        </div>
+    );
+};
 
 export default VideoPage;

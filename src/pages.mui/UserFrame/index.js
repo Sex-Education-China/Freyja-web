@@ -30,7 +30,6 @@ class UserFrame extends Component {
                     </div>
 
                 </div>
-                <div id={'clear'}></div>
             </div>
         );
     }

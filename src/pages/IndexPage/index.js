@@ -4,11 +4,11 @@ import {DefaultButton} from "@fluentui/react";
 class IndexPage extends Component {
     render() {
         const leftStyle={
-            float:"left",
+            //float:"left",
             width:'20%'
         }
         const rightStyle = {
-            float: 'right'
+            //float: 'right',
         }
 
         return (
@@ -19,6 +19,7 @@ class IndexPage extends Component {
                 <div style={rightStyle}>
                     <DefaultButton text="Standard"  />
                 </div>
+                <div style={{clear:'both'}}></div>
             </div>
         );
     }

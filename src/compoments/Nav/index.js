@@ -6,10 +6,11 @@ class Index extends Component {
         const navStyles: Partial<INavStyles> = {
             root: {
                 width: 208,
-                height: '100%',
+                height: '100vh',
                 boxSizing: 'border-box',
                 border: '1px solid #eee',
                 overflowY: 'auto',
+                margin:"0"
             },
         };
         const navLinkGroups: INavLinkGroup[] = [
